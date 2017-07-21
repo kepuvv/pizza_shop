@@ -14,18 +14,16 @@
 
 		<div>
 			<%= p.description %>
+			<br>
+			Size: <%= p.size %>
 		</div>
 
 		<div>
-			<h5> Size: <%= p.size %></h4>
+			<h5> Price: <%= p.price %> rub </h5>
 		</div>
 
 		<div>
-			<h5> Price: <%= p.price %> </h4>
-		</div>
-
-		<div>
-			<button class="btn btn-success btn-sm">Add to cart</button>
+			<button class="btn btn-success btn-sm" onclick="add_to_cart()">Add to cart</button>
 		</div>
 	</div>
 	<% end %>
