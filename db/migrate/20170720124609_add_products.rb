@@ -30,7 +30,7 @@ class AddProducts < ActiveRecord::Migration[5.1]
   		:is_spicy => false, 
   		:is_veg => true, 
   		:is_best_offer => false, 
-  		:path_to_image => '/images/pepperoni.jpg'
+  		:path_to_image => '/images/veg.jpg'
   		})
   end
 end
