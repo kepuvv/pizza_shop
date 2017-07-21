@@ -5,11 +5,11 @@
 	<% @products.each do |p| %>
 	<div class="col-md-3">
 		<div>
-			<%= p.title %>
+			<h2 style="color:#069"><%= p.title %></h2>
 		</div>
 
 		<div>
-			<img src="<%= p.path_to_image %>" />
+			<img  src="<%= p.path_to_image %>" />
 		</div>
 
 		<div>
@@ -17,7 +17,15 @@
 		</div>
 
 		<div>
-			Price: <%= p.price %>
+			<h5> Size: <%= p.size %></h4>
+		</div>
+
+		<div>
+			<h5> Price: <%= p.price %> </h4>
+		</div>
+
+		<div>
+			<button class="btn btn-success btn-sm">Add to cart</button>
 		</div>
 	</div>
 	<% end %>
